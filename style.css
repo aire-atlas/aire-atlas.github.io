@@ -1,0 +1,8 @@
+/***********************************************************************
+ * Custom stylesheet for aire-atlas' project pages
+ *
+ * It is based on the Bootstrap framework.
+ ***********************************************************************/
+
+/* body { margin: 0 auto; } */
+article { /*width: 542px;*/ max-width: 900px; }
