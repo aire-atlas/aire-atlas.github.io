@@ -6,3 +6,5 @@
 
 /* body { margin: 0 auto; } */
 article { /*width: 542px;*/ max-width: 900px; }
+ul { padding-left: 20px; }
+ul > li { margin-bottom: 10px; }

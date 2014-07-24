@@ -12,12 +12,28 @@
     <article>
       <div class="row">
         <header class="col-md-12">
-          <h1>AIRE : a generator of interactive web atlas</h1>
-
-          <p>
-            Beyond a simple consultation tool, the atlas allows an acces to multiple representation of the same phenomenon thanks to various spatial analysis methods and to little current cartographic representations in accordance with 5 different European levels.
-          </p>
+          <h1>AIRE : a generator of interactive web atlases</h1>
         </header>
+
+        <section class="col-xs-12 col-md-5">
+          <p>
+            AIRE is a web application tool to create and manage rich
+            atlases of thematic maps.
+          </p>
+          <p>
+            Built with PHP, the software generates the maps
+            using <a href="http://postgis.net/">PostgreSQL/PostGIS</a>
+            to query the geographic and statistical data,
+            and <a href="http://mapserver.org/">UMN MapServer</a> to
+            render the maps.
+            <!-- Beyond a simple consultation tool, the atlas allows an acces to multiple representation of the same phenomenon thanks to various spatial analysis methods and to little current cartographic representations in accordance with 5 different European levels. -->
+          </p>
+          <h3>Getting started</h3>
+          <ul class="list-unstyled">
+            <li><h4><a href="https://github.com/aire-atlas/sysconf.app.aire">System installation</a></h4></li>
+            <li><h4><a href="https://github.com/aire-atlas/sysconf.app.aire">Atlas management</a></h4></li>
+            <li><h4><a href="https://github.com/aire-atlas/sysconf.app.aire">Hacking the code</a></h4></li>
+        </section>
 
         <section class="col-xs-12 col-md-7">
           <p>
@@ -25,73 +41,104 @@
           </p>
         </section>
 
-        <section  class="col-xs-12 col-md-5">
-          <h3>Multi-representation</h3>
-          <p>
-            Beyond a simple consultation tool, the atlas allows an
-            acces to multiple representation of the same phenomenon
-            thanks to various spatial analysis methods and to little
-            current cartographic representations in accordance with
-            5 different European levels.
-          </p>
-        </section>
-
-        <section  class="col-xs-12 col-md-5">
-          <h3>Multiple levels of administrative units</h3>
-          <p>
-            Beyond a simple consultation tool, the atlas allows an
-            acces to multiple representation of the same phenomenon
-            thanks to various spatial analysis methods and to little
-            current cartographic representations in accordance with
-            5 different European levels.
-          </p>
-        </section>
-
-        <section  class="col-xs-12 col-md-5">
+        <section  class="col-xs-12 col-md-6">
           <h3>Any thematic data</h3>
           <p>
-            Beyond a simple consultation tool, the atlas allows an
-            acces to multiple representation of the same phenomenon
-            thanks to various spatial analysis methods and to little
-            current cartographic representations in accordance with
-            5 different European levels.
+            Demography, economy, environment... Once in the PostgreSQL
+            database, anything can be rendered on the maps.
           </p>
         </section>
-      </div>
-      <section class="row">
-        <h2>Documentation</h2>
-        <div class="col-md-4">
-          <h3><a href="https://github.com/aire-atlas/sysconf.app.aire">System installation</a></h3>
-          <p>
-            <i>sysconf.app.aire</i> is a package that automatize
-            the setting-up of a Debian GNU/Linux system to run
-            AIRE, and provides the <string>aire-manager</string>
-            script for easy administration of the various AIRE
-            atlases.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h3><a href="https://github.com/aire-atlas/sysconf.app.aire">Atlas management</a></h3>
-          <p>
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h3><a href="https://github.com/aire-atlas/sysconf.app.aire">Hacking the code</a></h3>
-          <p>
 
+        <section  class="col-xs-12 col-md-6">
+          <h3>Multi-representation</h3>
+          <p>
+            Any dataset is rendered using multiple representation
+            methods such as chloroplethe, proportional symbols,
+            discontinuity borders, cartograms, grids and smooth maps.
           </p>
-        </div>
-      </section>
+        </section>
+
+        <section  class="col-xs-12 col-md-6">
+          <h3>Multiple levels of administrative units</h3>
+          <p>
+            For every scale, the complete set of maps is generated.
+            For instance, country+region+departements data would
+            make 3 maps for every enabled representation method, for a
+            given dataset.
+          </p>
+        </section>
+
+        <section  class="col-xs-12 col-md-6">
+          <h3>Scientific quality</h3>
+          <p>
+            AIRE is built by scientists and is made to be
+            reliable. It provides:
+          </p>
+          <ul>
+            <li>Support for multiple projections (from the EPSG
+            catalog)</li>
+            <li>Proper, complete legend management, in sync with the
+              actual data</li>
+            <li>Proper map layouts (North arrow, lon/lat lines and
+              others...)</li>
+            <li>Multi-language support for atlas/map titles, legends,
+            units...</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- <section class="row"> -->
+      <!--   <h2>Documentation</h2> -->
+      <!--   <div class="col-md-4"> -->
+      <!--     <h3><a href="https://github.com/aire-atlas/sysconf.app.aire">System installation</a></h3> -->
+      <!--     <p> -->
+      <!--       <em>sysconf.app.aire</em> is a package that automatize -->
+      <!--       the setting-up of a Debian GNU/Linux system to run -->
+      <!--       AIRE, and provides the <string>aire-manager</string> -->
+      <!--       script for easy administration of the various AIRE -->
+      <!--       atlases. -->
+      <!--     </p> -->
+      <!--   </div> -->
+      <!--   <div class="col-md-4"> -->
+      <!--     <h3><a href="https://github.com/aire-atlas/sysconf.app.aire">Atlas management</a></h3> -->
+      <!--     <p> -->
+      <!--     </p> -->
+      <!--   </div> -->
+      <!--   <div class="col-md-4"> -->
+      <!--     <h3><a href="https://github.com/aire-atlas/sysconf.app.aire">Hacking the code</a></h3> -->
+      <!--     <p> -->
+
+      <!--     </p> -->
+      <!--   </div> -->
+      <!-- </section> -->
 
       <!-- <div class="col-xs-12 col-md-4"> -->
       <section class="col-md-6">
         <h2>Authors</h2>
-        <p>The Interactive Atlas of European Regions is an UMS 2414 RIATE project.</p>
+        <p><em>AIRE atlas</em> is a project of <mark>UMS 2414 RIATE</mark>,
+        the French public network for European spatial planning.</p>
+        <ul class="snopad">
+          <li>
+            <mark>Lead: Christine Zanin</mark>, Assistant
+            professor at University Paris
+            Diderot &lt;christine.zanin@univ-paris-diderot.fr&gt;
+          </li>
+          <li>
+            <mark>Cartography: Nicolas Lambert</mark>, Engineer in
+            cartography and GIS (CNRS)
+            at UMS 2414 RIATE &lt;Engineer in cartography and GIS
+            (CNRS)&gt;
+          <li>
+            <mark>Software development and release: Jean-François
+            Gigand</mark>, GEONEF &lt;jf@geonef.fr&gt;
+          </li>
+        </ul>
       </section>
       <section class="col-md-6">
         <h2>License</h2>
         <p>
-          AIRE is a Free Software, released under the termes of the
+          AIRE is a <strong>Free Software</strong>, released under the termes of the
           <a href="http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html">
             license CeCILL-C</a>, which permits and encourage free
           use, contributions and distribution of the Software,
